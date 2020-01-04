@@ -5,7 +5,8 @@
 # mount point   fstype  device                                        device2                                       flags
 /boot           emmc    /dev/block/bootdevice/by-name/boot
 /cache          ext4    /dev/block/bootdevice/by-name/cache
-/data          f2fs   /dev/block/bootdevice/by-name/userdata                     flags=encryptable=footer;length=-16384;fileencryption=ice/system         ext4    /dev/block/bootdevice/by-name/system
+/data           f2fs   /dev/block/bootdevice/by-name/userdata                     flags=encryptable=footer;length=-16384;fileencryption=ice
+/system         ext4    /dev/block/bootdevice/by-name/system
 /system_image   emmc    /dev/block/bootdevice/by-name/system
 /vendor         ext4    /dev/block/bootdevice/by-name/vendor                                                        flags=display="vendor";backup=1;wipeingui
 /vendor_image   emmc    /dev/block/bootdevice/by-name/vendor
