@@ -116,11 +116,11 @@ PLATFORM_VERSION := 16.1.0
 
 # NOTE - Dont use '-' or blank spaces in flag values , otherwise it will create build errors or other bugs in recovery (Excluding SHRP_PATH,SHRP_REC). 
 # Path of your SHRP Tree
-SHRP_PATH := device/vsmart/V620A
+SHRP_PATH := device/vsmart/live
 # Maintainer name
 SHRP_MAINTAINER := thinhx2
 # Device codename
-SHRP_DEVICE_CODE := V620A
+SHRP_DEVICE_CODE := live
 # put this 0 if device has no EDL mode
 SHRP_EDL_MODE := 1
 SHRP_EXTERNAL := /external_sd
