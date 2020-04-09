@@ -46,7 +46,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_PREBUILT_KERNEL := device/vsmart/live/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/vsmart/V620A/prebuilt/Image.gz-dtb
 
 # Avb
 BOARD_AVB_ENABLE := true
@@ -116,11 +116,11 @@ PLATFORM_VERSION := 16.1.0
 
 # NOTE - Dont use '-' or blank spaces in flag values , otherwise it will create build errors or other bugs in recovery (Excluding SHRP_PATH,SHRP_REC). 
 # Path of your SHRP Tree
-SHRP_PATH := device/vsmart/live
+SHRP_PATH := device/vsmart/V620A
 # Maintainer name
 SHRP_MAINTAINER := thinhx2
 # Device codename
-SHRP_DEVICE_CODE := live
+SHRP_DEVICE_CODE := V620A
 # put this 0 if device has no EDL mode
 SHRP_EDL_MODE := 1
 SHRP_EXTERNAL := /external_sd
@@ -133,7 +133,7 @@ SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
 SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
 SHRP_FONP_3 := /sys/class/leds/led:switch/brightness
 # Max Brightness of LED (Optional)
-SHRP_FLASH_MAX_BRIGHTNESS := 200
+SHRP_FLASH_MAX_BRIGHTNESS := 255
 # Check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 # Use this flag only if your device is A/B

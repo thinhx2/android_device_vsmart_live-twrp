@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_live.mk \
-    $(LOCAL_DIR)/omni_live.mk
+    $(LOCAL_DIR)/lineage_V620A.mk \
+    $(LOCAL_DIR)/omni_V620A.mk

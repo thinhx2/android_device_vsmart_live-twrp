@@ -15,16 +15,17 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := live
+PRODUCT_RELEASE_NAME := V620A
 
 $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := live
-PRODUCT_NAME := omni_live
+PRODUCT_DEVICE := V620A
+PRODUCT_NAME := lineage_V620A
 PRODUCT_BRAND := vsmart
-PRODUCT_MODEL := live
+PRODUCT_MODEL := vsmart V620A
 PRODUCT_MANUFACTURER := vsmart
+
