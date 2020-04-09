@@ -133,7 +133,7 @@ SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
 SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
 SHRP_FONP_3 := /sys/class/leds/led:switch/brightness
 # Max Brightness of LED (Optional)
-SHRP_FLASH_MAX_BRIGHTNESS := 255
+SHRP_FLASH_MAX_BRIGHTNESS := 200
 # Check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 # Use this flag only if your device is A/B
