@@ -44,9 +44,8 @@ on init
     write /config/usb_gadget/g1/os_desc/qw_sign "MSFT100"
     setprop sys.usb.configfs 1
 
-on boot
-    setprop sys.usb.config mtp,adb
-    setprop sys.usb.config adb
+on property:ro.boot.usbconfigfs=false
+   setprop sys.usb.configfs 0
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
@@ -62,4 +61,3 @@ on property:sys.usb.ffs.ready=1
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-
