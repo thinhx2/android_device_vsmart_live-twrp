@@ -28,6 +28,16 @@
 on fs
     export ANDROID_ROOT /system_root
 
+on boot
+    start predecrypt
+
+service predecrypt /sbin/predecrypt.sh
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0
+
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
 

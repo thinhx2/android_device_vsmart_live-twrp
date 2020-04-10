@@ -90,6 +90,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_F2FS := true
 ALLOW_MISSING_DEPENDENCIES := true
 
+# Pre-decrypt
+TARGET_RECOVERY_DEVICE_MODULES += predecrypt.sh
+
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
